@@ -10,11 +10,13 @@
 
 using namespace std;
 
-int TextProcess::remove_punc(const string &ori_str, string &out_str){
+std::set<std::string> punc{"·", ",", ".", "。", "，", "!"};
+
+int TextProcess::remove_punc(string &ori_str, string &out_str){
     vector<string> vec;
     string2vector(ori_str, vec);
     for (int i=0; i< vec.size(); i++){
-        if (TextProcess::punc.find(vec[i]) == TextProcess::punc.end()){
+        if (punc.find(vec[i]) == punc.end()){
             out_str += vec[i];
         }
     }

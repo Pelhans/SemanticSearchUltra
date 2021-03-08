@@ -10,6 +10,6 @@
 #include <string>
 #include <vector>
 
-int string2vector(const string &text, vector<string> &v);
+int string2vector(const std::string &text, std::vector<std::string> &v);
 
 #endif

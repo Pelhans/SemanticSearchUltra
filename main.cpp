@@ -5,7 +5,7 @@
 	> Created Time: Tue 09 Mar 2021 12:52:15 AM CST
  ************************************************************************/
  #include <iostream>
- #include "src/norm.h"
+ #include "include/norm.h"
 
  using namespace std;
 

@@ -15,9 +15,7 @@ class TextProcess{
     TextProcess();
     ~TextProcess();
     public:
-        set<string> punc{"·", ",", ".", "。", "，", "!"};
-        int remove_punc(const string &ori_str, string &out_str);
-        int TextProcess::string2vec(const string &ori_str, vector<string> &vec)
+        static int remove_punc(std::string &ori_str, std::string &out_str);
 };
 
 #endif
